@@ -15,7 +15,7 @@ Minitalk is a simple communication project between a client and a server using U
 
 1. Clone this repository to your local machine:
     ```bash
-    git clone https://github.com/your-username/minitalk.git
+    git clone https://github.com/antg01/Minitalk.git
     ```
 
 2. Navigate to the project directory:
