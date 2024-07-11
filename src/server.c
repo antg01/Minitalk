@@ -6,7 +6,7 @@
 /*   By: angerard <angerard@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 10:03:15 by angerard          #+#    #+#             */
-/*   Updated: 2024/07/11 13:36:33 by angerard         ###   ########.fr       */
+/*   Updated: 2024/07/11 13:45:43 by angerard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,13 @@ void	receive_bit(int sig)
 	bit++;
 	if (bit == 8)
 	{
-		{
-			if (character == '\0')
-				ft_printf("\n");
-			else
-				ft_printf("%c", character);
-			fflush(stdout);
-			bit = 0;
-			character = 0;
-		}
+		if (character == '\0')
+			ft_printf("\n");
+		else
+			ft_printf("%c", character);
+		fflush(stdout);
+		bit = 0;
+		character = 0;
 	}
 }
 
