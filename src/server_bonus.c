@@ -6,7 +6,7 @@
 /*   By: angerard <angerard@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 10:58:51 by angerard          #+#    #+#             */
-/*   Updated: 2024/07/11 13:48:05 by angerard         ###   ########.fr       */
+/*   Updated: 2024/08/08 10:26:37 by angerard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ void	receive_bit(int sig, siginfo_t *info, void *context)
 	if (bit == 8)
 	{
 		if (character == 0)
-        {
-            ft_printf("\n");
+		{
+			ft_printf("\n");
 			kill(info->si_pid, SIGUSR2);
-        }
+		}
 		else
 			ft_printf("%c", character);
 		fflush(stdout);
